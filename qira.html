@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="filepath" content="app/admins/templates/dashboard.html">
+    <title>All Applications</title>
+    <link rel="stylesheet" href="./qira.css">
+    <script type="text/javascript" src="./qira.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="flex jira-bar pl-3 justify-between">
+      <div class="flex flex-item">
+        <div class="flex-item flex jira-item text-xl cursor-pointer text-gray-300 pl-3 pr-3">
+          <div class="inline-block align-middle mt-1">
+            <img src="./img/qira.png" class="inline w-5 h-5">
+            <span class="inline">Qira Software</span>
+          </div>
+        </div>
+        <div class="flex-item jira-item text-md p-2 cursor-pointer text-gray-300">
+          Dashboards
+          <svg class="inline h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+        <div class="flex-item jira-item text-md p-2 cursor-pointer text-gray-300">
+          Projects
+          <svg class="inline h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+        <div class="flex-item jira-item text-md p-2 cursor-pointer text-gray-300">
+          Issues
+          <svg class="inline h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+        <div class="flex-item jira-item text-md p-2 cursor-pointer text-gray-300">
+          More
+          <svg class="inline h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+        <div class="flex-item jira-create-btn hover:bg-blue-400 rounded-lg text-md px-2 py-1 m-1 cursor-pointer text-gray-300 hover:text-gray-400 select-none">
+          Create
+        </div>
+      </div>
+      <div class="flex-item spacer"></div>
+      <div class="flex flex-item pr-3">
+        <div class="flex-item text-md p-1 cursor-pointer text-gray-300">
+          <input type="text" class="jira-search-input rounded mt-1 px-3 w-40" placeholder="Search">
+        </div>
+        <div class="flex-item hover:bg-blue-800 text-md p-1 cursor-pointer text-gray-300">
+          <img src="./img/loudspeaker.png" class="inline w-6 h-6 rounded-full mt-1">
+        </div>
+        <div class="flex-item hover:bg-blue-800 text-md p-1 cursor-pointer text-gray-300">
+          <img src="./img/info.png" class="inline w-6 h-6 rounded-full mt-1">
+        </div>
+        <div class="flex-item hover:bg-blue-800 text-md p-1 cursor-pointer text-gray-300">
+          <img src="./img/ff.jpg" class="inline w-6 h-6 rounded-full mt-1">
+        </div>
+      </div>
+    </nav>
+    <div class="px-20 py-5">
+      <div>
+        <p class="text-md text-gray-600">Intern Board</p>
+        <p class="text-3xl">SLICK sprint 1</p>
+        <p>Product Management: Launch features, find bugs, development, pull requests</p>
+        <p>Web: Make chatbot, use AWS and node</p>
+      </div>
+      <div class="border-2 border-gray -mx-8 mt-4"></div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full flex flex-wrap pt-4 text-xl">
+          <div class="w-1/3 px-4">
+            <span class="text-gray-700">TO DO</span>
+            <div class="border-2 border-gray -ml-8 mt-4 h-1"></div>
+          </div>
+          <div class="w-1/3 px-4">
+            <span class="text-gray-700">IN PROGRESS</span>
+            <div class="border-2 border-gray -mx-2 mt-4"></div>
+          </div>
+          <div class="w-1/3 px-4">
+            <span class="text-gray-700">DONE</span>
+            <div class="border-2 border-gray -mr-8 mt-4"></div>
+          </div>
+        </div>
+        <div class="w-full flex flex-wrap pt-12">
+          <label for="bokwoon-checkbox" class="w-full px-4 border bg-gray-200 cursor-pointer select-none"><b>• Bok Woon</b></label>
+          <input type="checkbox" id="bokwoon-checkbox" class="hidden">
+          <div id="bokwoon-content" class="w-full flex flex-wrap">
+            <div class="w-1/3 sortable">
+              <div class="">
+                A New Hand Touches The Beacon<br>
+                Chapter 1. A Phantom Menace<br>
+                Chapter 1. A Phantom Menace<br>
+                Chapter 1. A Phantom Menace<br>
+                Chapter 1. A Phantom Menace<br>
+                Chapter 1. A Phantom Menace<br>
+              </div>
+              <div class="">AAA</div>
+              <div class="">AAA</div>
+            </div>
+            <div class="w-1/3 border sortable">
+              <div class="">BBB</div>
+              <div class="">BBB</div>
+              <div class="">BBB</div>
+            </div>
+            <div class="w-1/3 border sortable">
+              <div class="">CCC</div>
+              <div class="">CCC</div>
+              <div class="">CCC</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex flex-wrap pt-12">
+          <label for="maikey-checkbox" class="w-full px-4 border bg-gray-200 cursor-pointer select-none"><b>• Michaelphilip</b></label>
+          <input type="checkbox" id="maikey-checkbox" class="hidden">
+          <div id="maikey-content" class="w-full flex flex-wrap">
+            <div class="w-1/3 sortable">
+              <div class="">AAA</div>
+              <div class="">AAA</div>
+              <div class="">AAA</div>
+            </div>
+            <div class="w-1/3 border sortable">
+              <div class="">BBB</div>
+              <div class="">BBB</div>
+              <div class="">BBB</div>
+            </div>
+            <div class="w-1/3 border sortable">
+              <div class="">CCC</div>
+              <div class="">CCC</div>
+              <div class="">CCC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div hidden>Icons made by
+      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+      <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+  </body>
+</html>
