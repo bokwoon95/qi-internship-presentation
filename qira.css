@@ -35296,6 +35296,16 @@ video {
   background-color: #549FFF;
 }
 
+.complete-sprint-btn {
+  color: #344563;
+  background-color: rgba(9,30,66,.08);
+}
+
+.complete-sprint-btn:hover {
+  color: #344563;
+  background-color: #DFE2E6;
+}
+
 .jira-search-input {
   color: #6F89B1;
   background-color: #083376;
@@ -35307,11 +35317,7 @@ video {
 
 .sortable-el {
   cursor: move;
-  min-height: 6rem;
-}
-
-.sortable-el {
-  cursor: move;
+  min-height: 3rem;
 }
 
 .el-ghost {

@@ -56,10 +56,10 @@ window.onload = function() {
     for (const sortableEl of sortable.children) {
       sortableEl.setAttribute("draggable", "true");
       sortableEl.classList.add("sortable-el");
-      sortableEl.classList.add("mt-4");
-      sortableEl.classList.add("min-h-16");
+      sortableEl.classList.add("mt-2");
       sortableEl.classList.add("h-auto");
-      sortableEl.classList.add("bg-gray-500");
+      sortableEl.classList.add("bg-white");
+      sortableEl.classList.add("p-4");
       sortableEl.addEventListener("dragstart", dragstart);
       sortableEl.addEventListener("dragend", dragend);
     }
