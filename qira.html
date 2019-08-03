@@ -2,13 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="filepath" content="app/admins/templates/dashboard.html">
-    <title>All Applications</title>
+    <title>2019 Aug 1 Intern Presentation</title>
     <link rel="stylesheet" href="./qira.css">
     <script type="text/javascript" src="./qira.js"></script>
   </head>
   <body class="bg-gray-100">
-    <nav class="flex jira-bar pl-3 justify-between">
+    <nav class="flex flex-wrap jira-bar pl-3 justify-between">
       <div class="flex flex-item">
         <div class="flex-item flex jira-item text-xl cursor-pointer text-gray-300 pl-3 pr-3">
           <div class="inline-block align-middle mt-1">
@@ -41,23 +40,24 @@
           </svg>
         </div>
         <button
-                  class="flex-item jira-create-btn rounded-lg text-md px-2 py-1 m-1 cursor-pointer select-none"
-                  onclick="javascript:(()=>{alert('😡😡😡😡😡😡');return false;})()">
-                  Create
+          class="flex-item jira-create-btn rounded-lg text-md px-2 py-1 m-1 cursor-pointer select-none"
+          onclick="javascript:(()=>{alert('😡😡😡😡😡😡');return false;})()">
+          Create
         </button>
       </div>
       <div class="flex-item spacer"></div>
       <div class="flex flex-item pr-3">
-        <div class="flex-item text-md p-1 cursor-pointer text-gray-300">
-          <input type="text" class="jira-search-input rounded mt-1 px-3 w-40" placeholder="Search">
-        </div>
-        <div class="flex-item hover:bg-blue-800 text-md p-1 cursor-pointer text-gray-300">
+        <form method="get" action="https://google.com/search"  target="_blank" autocomplete="off" class="flex-item text-md p-1 cursor-pointer text-gray-300">
+          <input type="text" name="q" autocomplete="off" class="jira-search-input rounded mt-1 px-3 w-40" placeholder="Search">
+          <input type="submit" hidden>
+        </form>
+        <div class="flex-item jira-item text-md p-1 cursor-pointer text-gray-300">
           <img src="./img/loudspeaker.png" class="inline w-6 h-6 rounded-full mt-1">
         </div>
-        <div class="flex-item hover:bg-blue-800 text-md p-1 cursor-pointer text-gray-300">
+        <div class="flex-item jira-item text-md p-1 cursor-pointer text-gray-300">
           <img src="./img/info.png" class="inline w-6 h-6 rounded-full mt-1">
         </div>
-        <div class="flex-item hover:bg-blue-800 text-md p-1 cursor-pointer text-gray-300">
+        <div class="flex-item jira-item text-md p-1 cursor-pointer">
           <img src="./img/ff.jpg" class="inline w-6 h-6 rounded-full mt-1">
         </div>
       </div>
@@ -98,51 +98,8 @@
           </div>
         </div>
         <div class="w-full flex flex-wrap pt-12">
-          <label for="bokwoon-checkbox" class="w-full px-4 border bg-gray-200 cursor-pointer select-none text-xl py-1">• Bok Woon</label>
-          <input type="checkbox" id="bokwoon-checkbox" class="hidden">
-          <div id="bokwoon-content" class="w-full flex flex-wrap">
-            <div class="w-1/3 sortable">
-              <div class="">
-                <p class="font-bold">
-                  Serverless
-                </p>
-                <p>Epheremal functions in the cloud</p>
-              </div>
-              <div class="">
-                <p class="font-bold">
-                  AWS
-                </p>
-                <p>API Gateway? URL Endpoint? IAM???</p>
-              </div>
-              <div class="">
-                <p class="font-bold">
-                  Node.js
-                </p>
-                <p>Callbacks → Promises → Async/Await</p>
-                <p>(Npm hell!)</p>
-              </div>
-              <div class="">
-                <p class="font-bold">
-                  Microsoft Teams Bot Framework
-                </p>
-                <p>Callbacks → Promises → Async/Await</p>
-              </div>
-              <div class="">
-                <p class="font-bold">
-                  Learn development flow
-                </p>
-                <p>Redmine ticket → New branch → Pull request → PR Review</p>
-              </div>
-            </div>
-            <div class="w-1/3 border sortable">
-            </div>
-            <div class="w-1/3 border sortable">
-            </div>
-          </div>
-        </div>
-        <div class="w-full flex flex-wrap pt-12">
-          <label for="maikey-checkbox" class="w-full px-4 border bg-gray-200 cursor-pointer select-none text-xl py-1">• Michaelphilip</label>
-          <input type="checkbox" id="maikey-checkbox" class="hidden">
+          <label for="maikey-checkbox" class="w-full px-4 border bg-gray-400 cursor-pointer select-none text-xl py-1">• Michaelphilip</label>
+          <input type="checkbox" id="maikey-checkbox" class="hidden" checked>
           <div id="maikey-content" class="w-full flex flex-wrap">
             <div class="w-1/3 sortable">
               <div class="">
@@ -214,6 +171,55 @@
                 <p class="font-bold">
                   RIP Vehicle Notes
                 </p>
+              </div>
+            </div>
+            <div class="w-1/3 border sortable">
+            </div>
+            <div class="w-1/3 border sortable">
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex flex-wrap pt-12">
+          <label for="bokwoon-checkbox" class="w-full px-4 border bg-gray-400 cursor-pointer select-none text-xl py-1">• Bok Woon</label>
+          <input type="checkbox" id="bokwoon-checkbox" class="hidden" checked>
+          <div id="bokwoon-content" class="w-full flex flex-wrap">
+            <div class="w-1/3 sortable">
+              <div class="">
+                <p class="font-bold">
+                  Serverless
+                </p>
+                <p>Epheremal functions in the cloud</p>
+              </div>
+              <div class="">
+                <p class="font-bold">
+                  AWS
+                </p>
+                <p>API Gateway? URL Endpoint? IAM???</p>
+              </div>
+              <div class="">
+                <p class="font-bold">
+                  Node.js
+                </p>
+                <p>Callbacks → Promises → Async/Await</p>
+                <p>(node_modules hell!)</p>
+              </div>
+              <div class="">
+                <p class="font-bold">
+                  Microsoft Teams Bot Framework
+                </p>
+                <p>Poor documentation</p>
+              </div>
+              <div class="">
+                <p class="font-bold">
+                  Learn development flow
+                </p>
+                <p>Redmine ticket → New branch → Pull request → PR Review</p>
+              </div>
+              <div class="">
+                <p class="font-bold">
+                  SLICK
+                </p>
+                <p>First exposure to big codebase</p>
               </div>
             </div>
             <div class="w-1/3 border sortable">

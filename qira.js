@@ -48,12 +48,15 @@ function dragover(event) {
 
 window.onload = function() {
   for (const sortable of document.querySelectorAll(".sortable")) {
+    if (!sortable) break;
     sortable.classList.add("bg-gray-200");
     sortable.classList.add("pl-4");
     sortable.classList.add("pr-4");
     sortable.classList.add("pb-4");
+    sortable.classList.add("pt-2");
     sortable.addEventListener("dragover", dragover);
     for (const sortableEl of sortable.children) {
+      if (!sortableEl) break;
       sortableEl.setAttribute("draggable", "true");
       sortableEl.classList.add("sortable-el");
       sortableEl.classList.add("mt-2");
